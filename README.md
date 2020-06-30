@@ -42,6 +42,7 @@ For test images, the predicted ages have a Mean Absolute Difference of 11.33. Be
 <h2 id="head5"> Acknowledgements </h2>
 
 <ul>
+ <li> Udacity https://www.udacity.com/
  <li> Kaggle https://www.kaggle.com/kmader/rsna-bone-age
 </ul>
 
