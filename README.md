@@ -22,32 +22,25 @@ Predicting age of child from X-ray image of hand
  <li> sklearn 
  <li> skimage
  <li> keras
- <li> altair
 </ul>
 
 <h2 id="head2"> Motivation of the project</h2>
-To apply deep learning skills learned as part of Udacity Machine Learning Nanodegree lesson to identify breed of a dog from image.
+In television series Bones, forensic anthropologist, Dr. Temperance "Bones" Brennan’s ability to predict a number of qualities of a person just by examining bone X-rays, captured my imagination. So when I came across a bones dataset in Kaggle I decided to apply my newly acquired skills in Deep Neural Networks.
 
 <h2 id="head3"> Instructions </h2>
-1. Specify the path for training, validation and test image folders. In each of the training, validation and test folders - the images must be in sub-folders named by the breed. Specify path for extracted features for pre-trained models you want to use for transfer learning.
+1. Specify the path for image folders and csv file with gender and bone age information. Run the cells in BoneAge_DataProcessing notebook to save extracted features as npz files.
 
-2. Run cells under Step 2 and 3 only if interested in: (i) Experiencing how transfer leaning expediates the process (ii) How different pre-trained models perform corparatively
-
-3. Run cells under step 4 and 5 to see results of CNN model.
+2. Run the cells in BoneAge_Prediction notebook to train a Convolution Neural Network and predict the ages of test images. The final predictions are saved as a CSV file.
 
 <h2 id="head4"> Summary of the results </h2>
-For test images, if a dog is detected in the image - the ouput is the predicted dog breed.
+For test images, the predicted ages have a Mean Absolute Difference of 11.33. Below is a chart showing the actual and predicted ages.
 
-![dog_classification](screen_shots/dog_classification.png)
-
-If a human face is detected then the closest dog breed is predicted.
-
-![human_classification](screen_shots/human_closest_dog_breed_classification.png)
+![age_prediction](visualization.png)
 
 <h2 id="head5"> Acknowledgements </h2>
 
 <ul>
- <li> Udacity https://www.udacity.com/
+ <li> Kaggle https://www.kaggle.com/kmader/rsna-bone-age
 </ul>
 
 <h2 id="head7"> Author </h2>
